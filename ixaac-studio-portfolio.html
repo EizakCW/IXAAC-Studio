@@ -17,10 +17,37 @@
   <meta property="og:description" content="Diseño que construye marcas memorables." />
   <meta property="og:type" content="website" />
 
+  <!-- EmailJS — envío de formulario sin backend -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // ── EmailJS CONFIG ──────────────────────────────────────────
+    // INSTRUCCIONES (solo hay que hacer esto UNA vez, es gratis):
+    //
+    // 1. Crea cuenta en https://www.emailjs.com  (plan gratuito = 200 emails/mes)
+    // 2. Dashboard → "Add New Service" → elige Gmail → conecta isaacmercedesdlr@gmail.com
+    //    Guarda el SERVICE ID que te dan (ej: "service_abc123")
+    // 3. Dashboard → "Email Templates" → Create Template.
+    //    En el template usa estas variables:
+    //       {{from_name}}  {{from_email}}  {{company}}
+    //       {{service}}    {{budget}}      {{message}}
+    //    "To email" debe ser: isaacmercedesdlr@gmail.com
+    //    Guarda el TEMPLATE ID (ej: "template_xyz789")
+    // 4. Dashboard → "Account" → copia tu PUBLIC KEY (ej: "user_XXXXXXXX")
+    // 5. Reemplaza los tres valores de abajo con los tuyos:
+    //
+    const EMAILJS_PUBLIC_KEY  = 'gm5Oq7XXDzebvxRom';      // ← pega aquí tu Public Key
+    const EMAILJS_SERVICE_ID  = 'service_p8y72sv';      // ← pega aquí tu Service ID
+    const EMAILJS_TEMPLATE_ID = 'template_5iost1e';     // ← pega aquí tu Template ID
+    //
+    // ────────────────────────────────────────────────────────────
+    (function(){ emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); })();
+  </script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Syne+Mono&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="ixaac-logo.svg">
 
   <style>
     /* ============================================================
@@ -1369,7 +1396,7 @@
               <span class="role">Diseñador<br><span class="accent-word">Gráfico.</span></span>
             </h1>
             <p class="hero-tagline reveal" style="animation-delay:.2s">
-              Diseño identidades visuales estratégicas para marcas que quieren dominar su industria.
+              Construyo marcas que el mundo recuerda. Identidad visual, branding y diseño que conecta con las personas.
             </p>
             <div class="hero-cta reveal" style="animation-delay:.3s">
               <a href="#contact" class="btn-primary">
@@ -1819,19 +1846,19 @@
               <h3>Hablemos sobre<br>tu proyecto 🚀</h3>
               <p>Estoy disponible para proyectos freelance de branding, diseño gráfico e identidad visual. Trabajo con clientes locales e internacionales.</p>
               <div class="contact-links">
-                <a href="mailto:isaac@ixaacstudio.com" class="contact-link">
+                 <a href="mailto:isaacmercedesdlr@gmail.com" class="contact-link">
                   <div class="contact-link-icon" style="background:rgba(0,245,200,0.1)">📧</div>
                   <div class="contact-link-text">
                     <div class="label">Email</div>
-                    <div class="value">isaac@ixaacstudio.com</div>
+                    <div class="value">isaacmercedesdlr@gmail.com</div>
                   </div>
                   <div class="contact-link-arrow">→</div>
                 </a>
-                <a href="https://wa.me/18091234567" class="contact-link" target="_blank" rel="noopener">
+                <a href="https://wa.me/18098391276" class="contact-link" target="_blank" rel="noopener">
                   <div class="contact-link-icon" style="background:rgba(37,211,102,0.1)">💬</div>
                   <div class="contact-link-text">
                     <div class="label">WhatsApp</div>
-                    <div class="value">+1 (809) 123-4567</div>
+                    <div class="value">+1 (809) 839-1276</div>
                   </div>
                   <div class="contact-link-arrow">→</div>
                 </a>
@@ -1846,13 +1873,13 @@
               </div>
               <!-- Social links -->
               <div class="social-bar">
-                <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+                <a href="https://www.instagram.com/ixaacstudio/" class="social-link" aria-label="Instagram" title="Instagram">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 </a>
                 <a href="#" class="social-link" aria-label="TikTok" title="TikTok">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
                 </a>
-                <a href="#" class="social-link" aria-label="Twitter / X" title="Twitter / X">
+                <a href="https://x.com/itseizak" class="social-link" aria-label="Twitter / X" title="Twitter / X">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
                 <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
@@ -1911,12 +1938,18 @@
                   <textarea id="message" name="message" placeholder="¿Cuál es tu visión? ¿A quién va dirigida tu marca? ¿Tienes referencias?" required></textarea>
                 </div>
                 <div class="form-submit-row">
-                  <button type="submit" class="btn-submit">Enviar mensaje →</button>
-                  <p class="privacy-note">Tu información es confidencial. No enviamos spam.</p>
+                  <button type="submit" class="btn-submit" id="submit-btn">
+                    <span id="btn-text">Enviar mensaje →</span>
+                    <span id="btn-loading" style="display:none">Enviando...</span>
+                  </button>
+                  <p class="privacy-note">Tu información es confidencial.<br>No enviamos spam.</p>
+                </div>
+                <div id="form-error" style="display:none;margin-top:14px;padding:14px 18px;background:rgba(255,78,188,0.08);border:1px solid rgba(255,78,188,0.3);border-radius:10px;font-size:0.84rem;color:#FF4EBC">
+                  ⚠️ Hubo un error al enviar. Por favor escríbeme directamente a <strong>isaacmercedesdlr@gmail.com</strong>
                 </div>
               </form>
               <div id="form-success">
-                <p>✅ ¡Mensaje enviado! Te responderé en menos de 24 horas.</p>
+                <p>✅ ¡Mensaje enviado a isaacmercedesdlr@gmail.com!<br>Te responderé en menos de 24 horas.</p>
               </div>
             </div>
           </div>
@@ -1936,15 +1969,15 @@
             <span class="ix">IX</span><span class="aac">AAC</span>
             <span class="studio">Studio</span>
           </div>
-          <p>Diseño gráfico que construye marcas memorables. Basado en República Dominicana, trabajando con el mundo.</p>
+           <p>Diseño gráfico que construye marcas memorables. Basado en República Dominicana, trabajando con el mundo.</p>
           <div class="social-bar" style="margin-top:24px">
-            <a href="#" class="social-link" aria-label="Instagram" title="Instagram" style="width:40px;height:40px">
+            <a href="https://www.instagram.com/ixaacstudio/" class="social-link" aria-label="Instagram" title="Instagram" style="width:40px;height:40px">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
             <a href="#" class="social-link" aria-label="TikTok" title="TikTok" style="width:40px;height:40px">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
             </a>
-            <a href="#" class="social-link" aria-label="Twitter" title="Twitter / X" style="width:40px;height:40px">
+            <a href="https://x.com/itseizak" class="social-link" aria-label="Twitter" title="Twitter / X" style="width:40px;height:40px">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             </a>
             <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn" style="width:40px;height:40px">
@@ -1975,10 +2008,10 @@
         <div class="footer-col">
           <h4>Contacto</h4>
           <ul>
-            <li><a href="mailto:isaac@ixaacstudio.com">isaac@ixaacstudio.com</a></li>
-            <li><a href="https://wa.me/18091234567">WhatsApp</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Behance</a></li>
+            <li><a href="mailto:isaacmercedesdlr@gmail.com">isaacmercedesdlr@gmail.com</a></li>
+            <li><a href="https://wa.me/18098391276">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/ixaacstudio/">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
           </ul>
         </div>
       </div>
@@ -1993,7 +2026,7 @@
   </footer>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/18091234567?text=Hola%20Isaac%2C%20me%20interesa%20tu%20servicio%20de%20diseño%20gráfico" class="wa-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/18098391276?text=Hola%20Isaac%2C%20me%20interesa%20tu%20servicio%20de%20diseño%20gráfico" class="wa-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
     <div class="wa-tooltip">¡Chatea ahora!</div>
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -2003,7 +2036,7 @@
   <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // ============================================================
     // CUSTOM CURSOR
     // ============================================================
@@ -2191,25 +2224,61 @@
     });
 
     // ============================================================
-    // CONTACT FORM
+    // CONTACT FORM — EmailJS (envío real a isaacmercedesdlr@gmail.com)
     // ============================================================
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
       const form = this;
-      // Validate
+
+      // ── 1. Validación de campos obligatorios ──────────────────
       const required = form.querySelectorAll('[required]');
       let valid = true;
       required.forEach(field => {
         if (!field.value.trim()) {
           valid = false;
           field.style.borderColor = '#FF4EBC';
-          setTimeout(() => field.style.borderColor = '', 2000);
+          setTimeout(() => field.style.borderColor = '', 2500);
         }
       });
       if (!valid) return;
-      // Success
-      form.style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
+
+      // ── 2. Estado "Enviando..." ───────────────────────────────
+      const submitBtn  = document.getElementById('submit-btn');
+      const btnText    = document.getElementById('btn-text');
+      const btnLoading = document.getElementById('btn-loading');
+      const formError  = document.getElementById('form-error');
+
+      submitBtn.disabled  = true;
+      btnText.style.display    = 'none';
+      btnLoading.style.display = 'inline';
+      formError.style.display  = 'none';
+
+      // ── 3. Parámetros que llegan al template de EmailJS ───────
+      const templateParams = {
+        from_name : document.getElementById('name').value.trim(),
+        from_email: document.getElementById('email').value.trim(),
+        company   : document.getElementById('company').value.trim() || 'No especificada',
+        service   : document.getElementById('service').value   || 'No especificado',
+        budget    : document.getElementById('budget').value    || 'No especificado',
+        message   : document.getElementById('message').value.trim(),
+        to_email  : 'isaacmercedesdlr@gmail.com'
+      };
+
+      // ── 4. Envío con EmailJS ──────────────────────────────────
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+        .then(function() {
+          // Éxito
+          form.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        })
+        .catch(function(error) {
+          // Error — mostrar mensaje y restaurar botón
+          console.error('EmailJS error:', error);
+          formError.style.display = 'block';
+          submitBtn.disabled       = false;
+          btnText.style.display    = 'inline';
+          btnLoading.style.display = 'none';
+        });
     });
 
     // ============================================================
